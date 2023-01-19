@@ -1,0 +1,110 @@
+<br>
+<p align="center">Maximum permissible amount per transaction : INR 500000</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let product of products">
+            <div class="card" style="width:400px ; height:600px">
+                <img [src]="product.image" alt="Card image" style="width:100% ; height:60%">
+                <div class="card-body">
+                    <h4 class="card-title" align="center">{{product.name}}</h4>
+                    <p class="card-text">{{product.description}}</p>
+                    <h3>₹{{product.price}}/-</h3>
+                    <p align="right">
+                        <button class="btn btn-primary" (click)="addcart(product)"> Add to Cart </button>
+                    </p>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="..." alt="First slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> -->
+<!--
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./assets/images/10001.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title" align="center">Nokia</h4>
+                    <p class="card-text">No Cost EMI Available from 1499/- PerMonth. Standard Charges Applicable.</p>
+                    <h3>₹12999.00/-</h3>
+                    <p align="right">
+                        <button class="btn btn-primary"> Add to Cart </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./assets/images/10002.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title" align="center">Samsung</h4>
+                    <p class="card-text">No Cost EMI Applicable from 1499/- PerMonth. Standard Charges Applicable.</p>
+                    <h3>₹29999.00/-</h3>
+                    <p align="right">
+                        <button class="btn btn-primary"> Add to Cart </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./assets/images/10003.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title" align="center">Apple</h4>
+                    <p class="card-text">No Cost EMI Applicable from 1499/- PerMonth. Standard Charges Applicable.</p>
+                    <h3>₹99999.00/-</h3>
+                    <p align="right">
+                        <button class="btn btn-primary"> Add to Cart </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+<!--
+    <div class="row">
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-6"> col-xl-1 </div>
+    </div>
+-->

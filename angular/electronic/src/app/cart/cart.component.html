@@ -1,0 +1,35 @@
+<br>
+<h3 align="center" [hidden]="cartItems.length==0"> Total Cart Items: {{cartItems.length}}</h3>
+<h3 align="center" *ngIf="cartItems.length==0">
+    Cart is Empty
+    <img src="https://t3.ftcdn.net/jpg/03/23/92/38/360_F_323923845_sB6dVDxEFFJOqJB6Rn6kCyf3tBe1RRaA.jpg">
+</h3>
+<div class="container">
+   <table class="table" [hidden]="cartItems.length==0">
+    <thead>
+        <th>Product Name</th>
+        <th>Product Description</th>
+        <th>Product Price</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of cartItems">
+            <td>{{product.name}}</td>
+            <td>{{product.description}}</td>
+            <td>₹{{product.price * product.count | number}}</td>
+            <td><button (click)="delete(product)">
+            <label><i class="bi-trash" style="font-size: 12px;"></i></label>   
+            </button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><h3 align="right"> Total Price: </h3></td>
+            <td><h3>₹{{total}}</h3></td>
+            <td><button class="btn btn-primary" 
+                [hidden]="cartItems.length==0" 
+                (click)="pay()">Pay with <img src="https://bsmedia.business-standard.com/media-handler.php?mediaPath=https://bsmedia.business-standard.com/_media/bs/img/article/2020-08/13/full/1597309837-7212.jpg&width=1200" width="40px">
+            </button></td>
+        </tr>
+    </tbody>
+   </table>
+</div>
+
+

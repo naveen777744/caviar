@@ -1,0 +1,26 @@
+<br><br><br><br>
+
+
+<div align="center">
+
+    <h2 align="center">Sign in with your phone number</h2><br>
+    <label for="phone">Phone Number</label><br>
+    <input type="text"  id="first"  [(ngModel)]="phoneNumber.country" class="input"  maxlength="2">&nbsp;
+    <input type="text"  id="second" [(ngModel)]="phoneNumber.area" class="input"  maxlength="3">&nbsp;
+    <input type="text"  id="third"  [(ngModel)]="phoneNumber.prefix" class="input"  maxlength="3">&nbsp;
+    <input type="text"  id="fourth" [(ngModel)]="phoneNumber.line" class="input" maxlength="4">
+    <br><br>
+    <div id="recaptcha-container"></div>
+    <button class="btn btn-primary" (click)="sendLoginCode()" id="recaptcha-container">SMS Login Code</button><br><br>
+    
+    <div *ngIf="windowRef.confirmationResult">
+      <label for="code">Enter Your Verification Code Here</label><br><br>
+      <input type="text" name="code" [(ngModel)]="verificationCode" class="input"><br><br>
+      <button class="btn btn-primary" (click)="verifyLoginCode()">Verify</button><br><br>
+    </div>
+  </div>
+     <div *ngIf="user" align="center">
+        verification success<br><br>
+        <button class="btn btn-primary" (click)="redirectToProduct()">Go to products</button><br><br>
+    </div>
+    

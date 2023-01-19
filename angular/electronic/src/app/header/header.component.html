@@ -1,0 +1,80 @@
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.disabled]="loginStatus" routerLink="login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.disabled]="loginStatus" routerLink="register">Register</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="showEmployees">ShowEmployees</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="getEmpById">GetEmployeeById</a>
+          </li> -->
+         <!--- <li class="nav-item">
+            <a class="nav-link" routerLink="products">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="cart">Cart({{cartItems.length}})</a>
+          </li>-->
+          
+          <!-- <li class="nav-item">
+            <a class="nav-link" [class.disabled]="!loginStatus" routerLink="logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>-->
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black" >
+    <div class="container-fluid">
+      <div style="height: 80px">
+        <img src="assets/images/logo1.jpg" style="height: 78px;width: 78px;"></div>
+      <!-- <a class="navbar-brand" href="#">MONSTER</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="home">&nbsp;<i class="bi-house" style="font-size: 48px;"></i></a>
+          </li></ul>
+          <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" [hidden]="loginStatus" routerLink="login"><i class="bi-box-arrow-in-left" style="font-size: 48px;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [hidden]="loginStatus" routerLink="register"><i class="bi-person-fill" style="font-size: 48px;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [hidden]="!loginStatus" routerLink="product"><i class="bi-phone" style="font-size: 48px;"></i></a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" [hidden]="!loginStatus" routerLink="cart"><i class="bi-cart" style="font-size: 48px;"></i><span class='badge' id='lblCartCount'>({{totalItem}})</span></a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" [hidden]="!loginStatus" routerLink="logout"><i class="bi-box-arrow-in-right" style="font-size: 48px;"></i></a>
+          </li>
+          
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
